@@ -1,9 +1,8 @@
 # Stock Photos
 
-Informational project about cocktails with a Multi-Page approach
-and external API for data where users can discover or search for
-some cocktails in the database. Every cocktail has an individual
-page with information about it.
+A simple project where users can search for stock photos.
+This project implements an infinite scrolling function that
+continues to parse images until they run out.
 
 ## Live Demo
 
