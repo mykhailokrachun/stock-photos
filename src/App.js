@@ -31,9 +31,8 @@ function App() {
       setPhotos((oldPhotos) => {
         if (query && page === 1) {
           return data.results;
-        } else if (query) {
-          const results = [data.results];
-          return [...oldPhotos, ...results];
+        } else if (query && data.results) {
+          return [...oldPhotos, ...data.results];
         } else {
           return [...oldPhotos, ...data];
         }
