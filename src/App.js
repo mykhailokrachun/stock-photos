@@ -32,7 +32,8 @@ function App() {
         if (query && page === 1) {
           return data.results;
         } else if (query) {
-          return [...oldPhotos, ...data.results];
+          const results = [data.results];
+          return [...oldPhotos, ...results];
         } else {
           return [...oldPhotos, ...data];
         }
